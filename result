@@ -1,0 +1,16 @@
+go test -count=5 -run=NONE -bench . -benchmem
+goos: darwin
+goarch: amd64
+pkg: github.com/kpango/fastime
+BenchmarkFastime-8   	2000000000	         0.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFastime-8   	2000000000	         0.48 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFastime-8   	2000000000	         0.48 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFastime-8   	2000000000	         0.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFastime-8   	2000000000	         0.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkTime-8      	100000000	        16.6 ns/op	       1 B/op	       0 allocs/op
+BenchmarkTime-8      	100000000	        15.4 ns/op	       1 B/op	       0 allocs/op
+BenchmarkTime-8      	100000000	        15.6 ns/op	       1 B/op	       0 allocs/op
+BenchmarkTime-8      	100000000	        15.6 ns/op	       1 B/op	       0 allocs/op
+BenchmarkTime-8      	100000000	        14.9 ns/op	       1 B/op	       0 allocs/op
+PASS
+ok  	github.com/kpango/fastime	12.936s
